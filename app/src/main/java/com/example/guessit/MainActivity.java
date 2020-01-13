@@ -14,7 +14,7 @@ import org.w3c.dom.Text;
 public class MainActivity extends AppCompatActivity {
     public void guessIt(View view) {
         int max = 20;
-        int min = 1;
+        int min = 1; 
         int randomNumber = (int)(Math.random()*((max-min)+1))+min;
         EditText yourEditText = (EditText) findViewById(R.id.editText);
         if(!(yourEditText.getText().toString()).equalsIgnoreCase("")) {
