@@ -21,10 +21,10 @@ public class MainActivity extends AppCompatActivity {
             int yourNumber = Integer.parseInt(yourEditText.getText().toString());
             ImageView image = (ImageView) findViewById(R.id.imageView);
             if(yourNumber == randomNumber) {
-                Toast.makeText(getBaseContext(),"Bingo !!You guessed it right!",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(),"Bingo !!You guessed it right !",Toast.LENGTH_SHORT).show();
                 image.setImageResource(R.drawable.bingo);
             } else {
-                Toast.makeText(getBaseContext(),"Hard Luck!!Try guessing again!",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(),"Hard Luck!!Try guessing again !",Toast.LENGTH_SHORT).show();
                 image.setImageResource(R.drawable.hardluck);
             }
             TextView myGuess = (TextView) findViewById(R.id.myGuess);
